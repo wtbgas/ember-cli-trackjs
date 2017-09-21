@@ -37,7 +37,7 @@ module.exports = {
     let options = app.options['ember-cli-trackjs'];
 
     if (!(options && options.cdn) && (!process.env.EMBER_CLI_FASTBOOT)) {
-      app.import(app.options.project.nodeModulesPath + '/trackjs/tracker.js');
+      app.import('node_modules/trackjs/tracker.js');
     }
   }
 };
